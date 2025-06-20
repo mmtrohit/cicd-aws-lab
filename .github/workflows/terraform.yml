@@ -46,4 +46,4 @@ jobs:
     # Step 6: Apply the Terraform plan only on push to main (not for PRs)
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-      run: terraform apply -auto-approve    # Auto-approve to skip manual confirmation
+      run: terraform apply -auto-approve    # Auto-approve to skip manual confirmation.
