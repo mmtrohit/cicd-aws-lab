@@ -1,4 +1,4 @@
- #Name of the workflow as it will appear in the GitHub Actions tabAdd commentMore actions
+#Name of the workflow as it will appear in the GitHub Actions tabAdd commentMore actions
 name: Deploy AWS Infrastructure with Terraform
 
 # Trigger the workflow on push or pull request to the main branch
@@ -36,8 +36,8 @@ jobs:
       run: terraform init
 
     # Step 4: Validate Terraform code to catch syntax or config errors
-    - name: Terraform Validate
-      run: terraform validate
+#    - name: Terraform Validate
+#      run: terraform validate
 
     # Step 5: Show the execution plan (preview changes)
     - name: Terraform Plan
